@@ -31,9 +31,10 @@ namespace WebAPI
         [StringLength(40, MinimumLength = 2, ErrorMessage = "Short Name from 2 to 40 character")]
         public string short_name { get; set; }
 
-        [Required(ErrorMessage = "Parent is required")]
+
         [StringLength(50, MinimumLength = 2, ErrorMessage = "Parent from 2 to 50 character")]
         public string parent { get; set; }
+
         public DateTime effective_date { get; set; }
         public DateTime valid_until { get; set; }
     }
