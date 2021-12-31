@@ -11,6 +11,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+using Microsoft.EntityFrameworkCore;
+using WebAPI.Services;
+using WebAPI.Repository;
 namespace WebAPI
 {
     public class Startup
@@ -25,6 +28,9 @@ namespace WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            string url = "server=LAPTOP-6D8AK342\\CHI;database=Digitech;uid=sa;pwd=123";
+            services.AddScoped<ICustomerAttributeService, CustomerAttributeService>();
+            services.AddDbContext<CustomerAttributeContext>(options=>options.UseSqlServer(url));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
