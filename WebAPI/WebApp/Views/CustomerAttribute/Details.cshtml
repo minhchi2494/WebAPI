@@ -1,0 +1,65 @@
+﻿@model WebApp.CustomerAttribute
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.attribute_master)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.attribute_master)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.attribute_values_code)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.attribute_values_code)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.description)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.short_name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.short_name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.parent)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.parent)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.effective_date)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.effective_date)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.valid_until)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.valid_until)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
