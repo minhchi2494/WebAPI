@@ -87,7 +87,6 @@ D:\WebAPI_Github\WebAPI\WebApp\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.W
 D:\WebAPI_Github\WebAPI\WebApp\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\WebAPI_Github\WebAPI\WebApp\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 D:\WebAPI_Github\WebAPI\WebApp\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-D:\WebAPI_Github\WebAPI\WebApp\obj\Debug\net5.0\WebApp.csproj.AssemblyReference.cache
 D:\WebAPI_Github\WebAPI\WebApp\obj\Debug\net5.0\WebApp.GeneratedMSBuildEditorConfig.editorconfig
 D:\WebAPI_Github\WebAPI\WebApp\obj\Debug\net5.0\WebApp.AssemblyInfoInputs.cache
 D:\WebAPI_Github\WebAPI\WebApp\obj\Debug\net5.0\WebApp.AssemblyInfo.cs
@@ -119,3 +118,6 @@ D:\WebAPI_Github\WebAPI\WebApp\obj\Debug\net5.0\Razor\Views\CustomerAttribute\In
 D:\WebAPI_Github\WebAPI\WebApp\obj\Debug\net5.0\Razor\Views\CustomerAttribute\Details.cshtml.g.cs
 D:\WebAPI_Github\WebAPI\WebApp\obj\Debug\net5.0\Razor\Views\CustomerAttribute\Create.cshtml.g.cs
 D:\WebAPI_Github\WebAPI\WebApp\obj\Debug\net5.0\Razor\Views\CustomerAttribute\Edit.cshtml.g.cs
+D:\WebAPI_Github\WebAPI\WebApp\obj\Debug\net5.0\Razor\Views\CustomerAttribute\Index2.cshtml.g.cs
+D:\WebAPI_Github\WebAPI\WebApp\obj\Debug\net5.0\WebApp.csproj.AssemblyReference.cache
+D:\WebAPI_Github\WebAPI\WebApp\obj\Debug\net5.0\Razor\Views\CustomerAttribute\Create2.cshtml.g.cs

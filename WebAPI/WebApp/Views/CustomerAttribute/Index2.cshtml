@@ -1,0 +1,43 @@
+﻿@model IEnumerable<WebApp.CustomerAttribute>
+
+@{
+    ViewData["Title"] = "Index2";
+}
+
+<h3>
+    @Html.ActionLink("Create new","Create2","CustomerAttribute")
+</h3>
+
+<h1>Customer Attribute</h1>
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Attribute Master</th>
+                <th>Attribute Values Code</th>
+                <th>Description</th>
+                <th>Short name</th>
+                <th>Parent</th>
+                <th>Effective Date</th>
+                <th>Valid Until</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.id</td>
+                    <td>@item.attribute_master</td>
+                    <td>@item.attribute_values_code</td>
+                    <td>@item.description</td>
+                    <td>@item.short_name</td>
+                    <td>@item.parent</td>
+                    <td>@item.effective_date</td>
+                    <td>@item.valid_until</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

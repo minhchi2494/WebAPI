@@ -6,6 +6,11 @@
 
 <h1>Csutomer Attribute</h1>
 
+@using (Html.BeginForm("Index","CustomerAttribute", FormMethod.Post)){
+    <input type="text" name="code" placeholder="Enter Attribute valur code..."/>
+    <input type="submit" value="Search"/>
+}
+
 <p>
     <a asp-action="Create">Create New</a>
 </p>

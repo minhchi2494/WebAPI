@@ -1,0 +1,58 @@
+﻿@model WebApp.CustomerAttribute
+
+@{
+    ViewData["Title"] = "Create2";
+}
+
+<h2>Create new Customer Attribute</h2>
+
+@using (Html.BeginForm("Create2","CustomerAttribute",FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.LabelFor(model=>model.attribute_master, htmlAttributes: new {@class = "control-label"})
+        @Html.EditorFor(model=>model.attribute_master, new {@class = "form-control"})
+        @Html.ValidationMessageFor(model=>model.attribute_master) 
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model=>model.attribute_values_code, htmlAttributes: new {@class = "control-label"})
+        @Html.EditorFor(model=>model.attribute_values_code, new {@class = "form-control"})
+        @Html.ValidationMessageFor(model=>model.attribute_values_code)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model=>model.description, htmlAttributes: new {@class = "control-label"})
+        @Html.EditorFor(model=>model.description, new {@class = "form-control"})
+        @Html.ValidationMessageFor(model=>model.description)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model=>model.short_name, htmlAttributes: new {@class = "control-label"})
+        @Html.EditorFor(model=>model.short_name, new {@class = "form-control"})
+        @Html.ValidationMessageFor(model=>model.short_name)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model=>model.parent, htmlAttributes: new {@class = "control-label"})
+        @Html.EditorFor(model=>model.parent, new {@class = "form-control"})
+        @Html.ValidationMessageFor(model=>model.parent)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model=>model.effective_date, htmlAttributes: new {@class = "control-label"})
+        @Html.EditorFor(model=>model.effective_date, new {@class = "form-control"})
+        @Html.ValidationMessageFor(model=>model.effective_date)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model=>model.valid_until, htmlAttributes: new {@class = "control-label"})
+        @Html.EditorFor(model=>model.valid_until, new {@class = "form-control"})
+        @Html.ValidationMessageFor(model=>model.valid_until)
+    </div>
+
+    <div>
+        <input type="submit" value="Create" class="btn-info"/>
+    </div>
+}
+
+<h3 class="error">@ViewBag.error</h3>

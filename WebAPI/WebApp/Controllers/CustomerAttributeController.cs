@@ -13,11 +13,20 @@ namespace WebApp.Controllers
     {
         private string uri = "http://localhost:36936/api/CustomerAttribute/";
         private HttpClient httpClient = new HttpClient();
-        public IActionResult Index()
+        public IActionResult Index(string code)
         {
             var model = JsonConvert.DeserializeObject<IEnumerable<CustomerAttribute>>(
                                 httpClient.GetStringAsync(uri).Result);
-            return View(model);
+            if (string.IsNullOrEmpty(code))
+            {
+                return View(model);
+            }
+            else
+            {
+                model = model.Where(m=>m.attribute_values_code.ToLower().Contains(code.ToLower())).ToList();
+                return View(model);
+            }
+            
         }
 
         [HttpGet]
