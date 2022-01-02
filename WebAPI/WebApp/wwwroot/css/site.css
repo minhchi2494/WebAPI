@@ -73,3 +73,25 @@ body {
 .error{
     color:red;
 }
+
+.fa-eye {
+    color:black;
+    font-weight:100;
+}
+
+.fa-edit {
+    color: black;
+    font-weight: 100;
+}
+
+.fa-trash-alt {
+    color: black;
+    font-weight: 100;
+}
+
+.table-thead {
+    background-color: #E9ECEF;
+    border: none;
+}
+
+
