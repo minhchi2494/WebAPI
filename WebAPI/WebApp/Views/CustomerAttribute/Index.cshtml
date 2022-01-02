@@ -7,15 +7,17 @@
 <h1>Csutomer Attribute</h1>
 
 @using (Html.BeginForm("Index","CustomerAttribute", FormMethod.Post)){
-    <input type="text" name="code" placeholder="Enter Attribute valur code..."/>
+    <input type="text" name="code" placeholder="Attribute value code..."/>
     <input type="submit" value="Search"/>
 }
 
 <p>
-    <a asp-action="Create">Create New</a>
+    @*<a asp-action="Create">Create New</a>*@
+    <br>
+    <a href="/CustomerAttribute/Create" class="btn btn-info"><i class="fas fa-plus"></i> ADD</a>
 </p>
-<table class="table">
-    <thead>
+<table class="table" border="1">
+    <thead class="table-thead">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.id)
@@ -41,6 +43,8 @@
             <th>
                 @Html.DisplayNameFor(model => model.valid_until)
             </th>
+            <th></th>
+            <th></th>
             <th></th>
         </tr>
     </thead>
@@ -72,9 +76,16 @@
                 @Html.DisplayFor(modelItem => item.valid_until)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+                <a href="/CustomerAttribute/Details/@item.id"><i class="far fa-eye"></i></a>
+                @*@Html.ActionLink("Edit", "Edit", new { id=item.id }) | 
                 @Html.ActionLink("Details", "Details", new {  id=item.id  }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.id })
+                @Html.ActionLink("Delete", "Delete", new { id=item.id }) *@
+            </td>
+            <td>
+                <a href="/CustomerAttribute/Edit/@item.id"><i class="fas fa-edit"></i></a>
+            </td>
+            <td>
+                <a href="/CustomerAttribute/Delete/@item.id"><i class="far fa-trash-alt"></i></a>
             </td>
         </tr>
 }
